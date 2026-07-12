@@ -40,9 +40,10 @@
 ### ⚡ currently
 
 ```yaml
-learning:  JavaScript & web development
+learning:  ai automation, full-stack development
+mastering: n8n, hermes ai, odysseus ai
 building:  something messy (it'll make sense later)
-watching:  One Piece 🏴‍☠️
+watching:  tulsa king🤴, One Piece 🏴‍☠️, house of the dragon 🐉
 sipping:   chai, obviously
 ```
 
