@@ -2,16 +2,7 @@
 
 <img src="ascii-portrait.svg" alt="Abhimanyu ASCII portrait" width="500"/>
 
-```
-          _     _     _                                     _____       _ 
-    /\   | |   | |   (_)                                   |  __ \     (_)
-   /  \  | |__ | |__  _ _ __ ___   __ _ _ __  _   _ _   _  | |__) |__ _ _ 
-  / /\ \ | '_ \| '_ \| | '_ ` _ \ / _` | '_ \| | | | | | | |  _  // _` | |
- / ____ \| |_) | | | | | | | | | | (_| | | | | |_| | |_| | | | \ \ (_| | |
-/_/    \_\_.__/|_| |_|_|_| |_| |_|\__,_|_| |_|\__, |\__,_| |_|  \_\__,_| |
-                                               __/ |                  _/ |
-                                              |___/                  |__/ 
-```
+<img src="name-banner.svg" alt="Abhimanyu Raj" width="500"/>
 
 [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=00D9FF&center=true&vCenter=true&width=440&lines=teaching+machines+to+do+my+boring+work;AI+%C3%97+automation+%C3%97+web;learning+by+shipping+%F0%9F%9A%80;currently+in+beta+version)](https://github.com/codes-abhimanyuraj)
 
