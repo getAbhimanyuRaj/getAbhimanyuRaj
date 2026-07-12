@@ -6,7 +6,7 @@
 <img src="ascii-portrait-color.svg" alt="Abhimanyu ASCII portrait" width="270"/>
 </td>
 <td align="center">
-<img src="name-banner.svg" alt="Abhimanyu Raj" width="440"/>
+<img src="name-banner.svg" alt="Abhimanyu Raj" width="400"/>
 <br/><br/>
 <a href="https://github.com/codes-abhimanyuraj">
 <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=00D9FF&center=true&vCenter=true&width=420&lines=teaching+machines+to+do+my+boring+work;AI+%C3%97+automation+%C3%97+web;learning+by+shipping+%F0%9F%9A%80;currently+in+beta+version" alt="Typing SVG"/>
