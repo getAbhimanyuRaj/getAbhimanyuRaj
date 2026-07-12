@@ -1,14 +1,16 @@
 <div align="center">
 
+<img src="ascii-portrait.svg" alt="Abhimanyu ASCII portrait" width="500"/>
+
 ```
-          _     _     _                                   
-    /\   | |   | |   (_)                                  
-   /  \  | |__ | |__  _ _ __ ___   __ _ _ __  _   _ _   _ 
-  / /\ \ | '_ \| '_ \| | '_ ` _ \ / _` | '_ \| | | | | | |
- / ____ \| |_) | | | | | | | | | | (_| | | | | |_| | |_| |
-/_/    \_\_.__/|_| |_|_|_| |_| |_|\__,_|_| |_|\__, |\__,_|
-                                               __/ |      
-                                              |___/       
+          _     _     _                                     _____       _ 
+    /\   | |   | |   (_)                                   |  __ \     (_)
+   /  \  | |__ | |__  _ _ __ ___   __ _ _ __  _   _ _   _  | |__) |__ _ _ 
+  / /\ \ | '_ \| '_ \| | '_ ` _ \ / _` | '_ \| | | | | | | |  _  // _` | |
+ / ____ \| |_) | | | | | | | | | | (_| | | | | |_| | |_| | | | \ \ (_| | |
+/_/    \_\_.__/|_| |_|_|_| |_| |_|\__,_|_| |_|\__, |\__,_| |_|  \_\__,_| |
+                                               __/ |                  _/ |
+                                              |___/                  |__/ 
 ```
 
 [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=00D9FF&center=true&vCenter=true&width=440&lines=teaching+machines+to+do+my+boring+work;AI+%C3%97+automation+%C3%97+web;learning+by+shipping+%F0%9F%9A%80;currently+in+beta+version)](https://github.com/codes-abhimanyuraj)
@@ -23,7 +25,7 @@
 - 🌱 currently learning **web development** — messy first versions, then better ones
 - ⚡ curious about everything, expert in nothing *(yet)*
 - 🍿 fueled by chai, anime & 3am ideas
-- 📫 find me around the internet ↓
+- 💬 ask me about: **anime, automation, or why chai > coffee** ☕
 
 <div align="center">
 
@@ -32,6 +34,17 @@
 [![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/luffysaini)
 
 </div>
+
+---
+
+### ⚡ currently
+
+```yaml
+learning:  JavaScript & web development
+building:  something messy (it'll make sense later)
+watching:  One Piece 🏴‍☠️
+sipping:   chai, obviously
+```
 
 ---
 
@@ -61,7 +74,17 @@
 
 ---
 
+### 🚀 things I've built
+
+> 🚧 under construction — cooking something up. check back soon.
+
+---
+
 <div align="center">
+
+### 💭 random dev wisdom
+
+![Quote](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight)
 
 *"living in beta version — will update README when I figure myself out"*
 
