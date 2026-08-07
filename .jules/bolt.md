@@ -1,0 +1,3 @@
+## 2024-08-07 - Optimize SVG Files Carefully
+**Learning:** Static SVG assets in repositories can be optimized using `svgo` to reduce download sizes. However, default optimization plugins like `convertShapeToPath` can corrupt SVG animations by converting shapes (like `<rect>`) with animatable attributes (like `width`) into non-animatable `<path>` tags.
+**Action:** When optimizing animated SVGs, always disable potentially breaking plugins using a custom configuration (e.g., overriding `convertShapeToPath: false` in `preset-default`). Verify visual correctness after optimization.
