@@ -1,0 +1,3 @@
+## 2024-08-13 - SVG Layer Duplication Performance Anti-pattern
+**Learning:** Found a codebase-specific anti-pattern in `name-banner.svg` where heavy text blocks were duplicated 3x to create layer effects (base/shadow, glow, and top colored text). This bloated the file significantly without adding value since the SVG specification explicitly provides `<use>` tags for reuse.
+**Action:** Always check SVGs that implement shadows, glows, or other "layered" visual effects. They often achieve this by copy-pasting the underlying heavy `<path>` or `<text>` nodes. Using `<defs>` with `<use href="#id">` instead can drastically reduce file sizes and parsing time with zero visual difference.
