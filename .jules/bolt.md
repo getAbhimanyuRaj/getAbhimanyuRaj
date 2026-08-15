@@ -1,0 +1,3 @@
+## 2026-08-15 - Optimizing SVGs lacking a package.json
+**Learning:** This repository is purely a static profile README and doesn't contain a `package.json` to run scripts via `pnpm` or `npm`. SVGs in this repo act as static assets without a formal testing suite. Validating via Python's built-in `xml.etree.ElementTree` is the appropriate way to check XML compliance locally without `xmllint`.
+**Action:** Always check the repository root for configuration files before attempting to run command-line tests. Rely on custom built-in testing structures (like Python's XML module for SVGs) when standard testing suites are unavailable.
