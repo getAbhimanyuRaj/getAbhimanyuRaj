@@ -1,0 +1,3 @@
+## 2023-10-24 - SVG Optimization Subtleties
+**Learning:** `xml:space="preserve"` is absolutely critical for SVG-based ASCII art to prevent renderers from collapsing consecutive spaces and breaking layout. Moving it and `fill` to parent tags is efficient, but removing them must be done carefully to avoid visual regressions (e.g., invisible text). Also, `lengthAdjust` does not inherit like `fill` or `xml:space` do.
+**Action:** When optimizing SVG structure, prioritize precision replacements (regex) rather than global string `.replace()` calls to prevent stripping the newly-hoisted properties from the parent `<g>` tag itself. Always manually verify that inheritance matches expectations for all removed properties.
