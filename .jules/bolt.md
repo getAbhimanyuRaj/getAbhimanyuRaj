@@ -1,0 +1,3 @@
+## 2024-05-24 - SVG Optimization Learning
+**Learning:** For SVG files containing ASCII art, `xml:space="preserve"` and other styling attributes like `fill` can be moved to the parent `<g>` element instead of being repeated on every single `<text>` element. The 'lengthAdjust' attribute, however, is not inherited.
+**Action:** Always check for repeated attributes in SVG files, particularly in generated ASCII art or text blocks, and hoist them to the parent grouping element (`<g>`) to significantly reduce file size without changing rendering behavior. Use targeted regex or proper XML parsing to avoid breaking existing syntax.
