@@ -1,0 +1,3 @@
+## 2024-08-22 - Deduplicate repetitive massive text blocks in SVGs
+**Learning:** This codebase uses massive duplicated ASCII art text blocks in SVG images. Attempting to replace them globally via string replacements is tricky and can result in corrupt files or loss of precision. The text elements don't automatically inherit `lengthAdjust` from parent `<g>` tag if extracted, although here we kept the text properties verbatim.
+**Action:** When finding repeated large `<text>` or ASCII blocks in SVG codebases, always extract them to a `<g>` tag in `<defs>` and use `<use href="#id"/>` to massively shrink file sizes (e.g. 50% reduction).
