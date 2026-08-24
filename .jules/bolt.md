@@ -1,0 +1,3 @@
+## 2024-08-24 - SVG Deduplication Strategy
+**Learning:** ElementTree parsing/re-serialization in Python can drop crucial XML formatting attributes (like `xml:space="preserve"`) that are critical for ASCII art layout in SVGs. Standard string manipulation and extraction based on indices is a more reliable approach for refactoring complex structural blocks without losing unparsed attributes.
+**Action:** When deduplicating large text blocks into `<defs>` in SVGs with ASCII art, prefer targeted string replacement to preserve formatting attributes over full XML parsing unless custom serialization is implemented.
