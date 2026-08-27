@@ -1,0 +1,3 @@
+## 2026-08-27 - Deduplicating SVG text blocks
+**Learning:** SVG structures containing repetitious data like ASCII art can be deduplicated by extracting identical text blocks into a `<g>` tag within `<defs>` and referencing them via `<use href="#id"/>` in the body. However, manipulating large XML documents with `<use>` strings requires splitting the document manually (around `</defs>`) instead of a global string replace to prevent recursion issues.
+**Action:** When presented with repetitive SVG files, write a script to move identical chunks to the defs section, split the file to protect the defs section from substitution, and then do string substitution only in the main body.
