@@ -1,0 +1,3 @@
+## 2024-03-01 - Optimizing large SVG text blocks
+**Learning:** When optimizing SVGs by extracting repeated `<text>` nodes into `<defs>` and referencing them with `<use>`, naive string replacements across the entire file can unintentionally replace the extracted source node inside `<defs>` itself, leading to a `<use>` element trying to reference itself, which breaks the SVG.
+**Action:** When manually modifying SVGs via string manipulation, first parse the SVG to separate the `<defs>` and body components (e.g. split on `</defs>`), inject the new `<g id="...">` definition inside the `<defs>`, and ONLY apply the text substitution to the body portion.
