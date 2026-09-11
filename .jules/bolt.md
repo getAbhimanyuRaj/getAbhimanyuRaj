@@ -1,0 +1,3 @@
+## 2024-09-11 - SVG Deduplication and Formatting Loss
+**Learning:** Using standard XML parsers like `xml.etree.ElementTree` to modify complex SVG files (e.g. for extracting deduplicated segments into `<defs>`) can inadvertently drop critical formatting attributes like `xml:space="preserve"` or namespace declarations upon re-serialization. This is especially problematic for ASCII art layouts which break when whitespace collapses.
+**Action:** When deduplicating SVG nodes into `<defs>`, prefer targeted string manipulation or Regex on the raw file content instead of full XML parsing, ensuring that attributes are safely preserved and applied to the newly created definition tags.
