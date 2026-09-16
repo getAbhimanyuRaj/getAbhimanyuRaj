@@ -1,0 +1,3 @@
+## 2024-09-16 - SVG File Size Optimization via Deduplication
+**Learning:** Extracting heavily duplicated elements (like large blocks of ASCII art) into a `<g>` tag within `<defs>` and referencing them with `<use>` tags can significantly reduce SVG file size (nearly 50% reduction in `name-banner.svg`).
+**Action:** Always check SVGs for massive duplicated code blocks and use `<defs>` and `<use>` for deduplication when it heavily outweighs the wrapper overhead. Keep in mind that doing this manually or programmatically via regex can be tricky due to recursive infinite loops if not scoped correctly (don't replace the definition itself).
