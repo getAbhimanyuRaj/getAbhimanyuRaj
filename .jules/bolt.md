@@ -1,0 +1,3 @@
+## 2026-09-24 - SVG Attribute Inheritance Optimization
+**Learning:** For SVGs heavily relying on `<text>` nodes, attributes like `fill`, `font-family`, and `xml:space` can be inherited from a parent `<g>` container, while attributes like `lengthAdjust` cannot. Global string manipulation to extract redundant attributes is effective but must be carefully isolated to the document body to prevent stripping those attributes from the parent itself.
+**Action:** Always wrap redundant `<text>` properties in a `<g>` block where spec allows inheritance. Use split-and-replace string manipulation to selectively strip attributes from children only.
