@@ -1,0 +1,3 @@
+## 2024-10-02 - SVG ASCII Deduplication Loop Pitfall
+**Learning:** When using Python string replacement (`content.replace()`) to deduplicate heavily repeated SVG `<text>` nodes by moving them into `<defs>` and referencing them with `<use>`, doing a global replacement across the entire SVG string will inadvertently replace the newly placed source nodes inside `<defs>` as well. This creates a recursive `<use href="#id"/>` pointing to itself inside the definition, breaking the SVG.
+**Action:** Always partition the SVG string around the closing `</defs>` tag, and apply string replacement operations *only* to the body of the document to ensure the extracted definition remains intact.
