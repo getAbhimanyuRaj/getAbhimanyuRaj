@@ -1,0 +1,3 @@
+## 2024-10-04 - SVG Size Optimization via Defs and Attribute Hoisting
+**Learning:** For highly repetitive SVG files containing identical ASCII text or deeply duplicated elements, moving the duplicate block to an `id`-labeled `<g>` inside `<defs>` and instantiating it with `<use href="#id"/>` produces major payload reductions without breaking the visual appearance or animation layering. Additionally, lifting common attributes like `xml:space="preserve"` to the parent `<g>` tag strips significant bytes.
+**Action:** Always scan large static SVGs for identical blocks or heavily repeated attributes. Use `<defs>`+`<use>` and parent attribute hoisting to optimize their size prior to deployment.
