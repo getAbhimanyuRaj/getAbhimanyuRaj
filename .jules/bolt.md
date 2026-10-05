@@ -1,0 +1,3 @@
+## 2024-10-05 - SVG String Replacement Safety
+**Learning:** When using Python string replacement to deduplicate SVG nodes (moving a node into `<defs>` and replacing occurrences in the body with `<use>`), performing a global `.replace()` on the entire document string will inadvertently replace the original extracted node inside the `<defs>` section as well. This leads to broken syntax and an infinite recursion loop via self-referencing `<use>` tags.
+**Action:** Always split the document content (e.g., around the `</defs>` closing tag). Apply the string `.replace()` operation exclusively to the document body portion, and then concatenate it back with the header portion.
