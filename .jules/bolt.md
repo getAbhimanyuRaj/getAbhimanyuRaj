@@ -1,0 +1,3 @@
+## 2024-10-24 - SVG <use> Deduplication for ASCII Text
+**Learning:** For SVGs containing large, duplicated ASCII art or text block layouts (like banners with layered glow/gradient effects), standard vector optimization tools may miss it, but extracting the common text blocks to a `<defs>` node and using `<use href="#id"/>` correctly applies parent group attributes (like `fill` or filters) to the shadow DOM while significantly reducing the raw file size and DOM complexity.
+**Action:** When inspecting manual SVG art or animated text banners, always check if multiple `<g>` elements are replicating the identical massive `<text>` blocks with just different root styles, and replace them with `<use>` references.
