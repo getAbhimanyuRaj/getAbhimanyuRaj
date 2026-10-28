@@ -1,0 +1,3 @@
+## 2024-05-15 - SVG deduplication and shadow DOM styling
+**Learning:** Deduplicating SVG text into <defs> requires careful handling of attributes. Specifically, the lengthAdjust attribute is not inherited by <text> elements from a parent <g> element. We must use python to deduplicate text nodes inside the name-banner.svg since they are duplicated.
+**Action:** Use Python script to securely extract identical ascii text to <defs> and replace the repetitions with <use>.
