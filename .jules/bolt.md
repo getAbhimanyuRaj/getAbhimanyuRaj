@@ -1,0 +1,3 @@
+## 2024-11-05 - SVG ASCII Art Deduplication
+**Learning:** SVGs in this codebase often duplicate massive ASCII art blocks multiple times to simulate CSS text-shadow and glow effects, leading to significant file bloat. Extracting these duplicated ASCII art groups into `<defs>` and referencing them via `<use href="#id" />` is a highly effective optimization that retains visual fidelity while reducing file size and DOM complexity.
+**Action:** When inspecting SVGs with heavy ASCII art usage in this project, proactively check for duplicate blocks using regex or grep. Deduplicate them into `<defs>` avoiding string replacement within the `<defs>` tag itself to prevent recursive `<use>` issues.
