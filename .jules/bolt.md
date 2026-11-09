@@ -1,0 +1,1 @@
+## 2024-05-14 - SVG Deduplication\n**Learning:** Massive ASCII art blocks in SVG are often duplicated to simulate CSS text-shadow and glow effects.\n**Action:** Deduplicate these by extracting them into a <g> tag within <defs> and referencing them via <use> to prevent file bloat.
