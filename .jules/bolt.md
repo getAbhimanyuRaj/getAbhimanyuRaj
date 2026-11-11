@@ -1,0 +1,3 @@
+## 2024-11-11 - Deduplicating ASCII Art Blocks in SVGs
+**Learning:** Massive blocks of ASCII art are often duplicated multiple times in SVG files to simulate CSS-like drop-shadow or glow effects by overlaying identical text elements with different opacities or filters. This causes unnecessary file bloat and DOM complexity.
+**Action:** Always check SVGs containing ASCII art for heavily duplicated `<text>` blocks. Extract the original block into a `<g>` tag within `<defs>`, assign it an ID, and replace all instances in the SVG body with `<use href="#id"/>`. Ensure `xml:space="preserve"` and other styling attributes are maintained on the original elements in `<defs>` so that shadow DOM instances inherit them correctly without breaking visual layout.
